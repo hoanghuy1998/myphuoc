@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>My Phuoc Dental Clinic</title>
+</head>
+<body>
+    <header class="header ">
+       <div class="container h-100">
+           <div class="row h-100 align-content-center">
+                <div class="col header__phone ">
+                    <i class="fas fa-phone"></i>
+                    <span>18002540</span>
+                </div>
+                <div class="col header__email">
+                    <i class="fas fa-envelope-open"></i>
+                    <span>demo@gmail.com</span>
+                </div>
+                <div class="col header__face">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>facebook/demo.com</span>
+                </div>
+           </div>
+       </div>
+    </header>
+    <nav class="nav">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-3 nav__logo align-content-center">
+                  <a href="#">
+                    <img  class="hover-img" src="./img/logo/logo.png" alt="">
+                  </a>
+                </div>
+                <ul class="nav nav-pills col-sm-9 nav__list align-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="./html/aboutUs.html">về chúng tôi</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">dịch vụ</a>
+                        <ul class="dropdown-menu">
+                          
+                          <li><a class="dropdown-item" href="./html/seviceCeramicTooth.html">BỌC RĂNG SỨ</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="./html/sevice.html">RĂNG SỨ THẨM MỸ</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="#">TRỔNG IMPLANT</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="#">LẤY CAO RĂNG</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="#">TRÁM RĂNG THẨM MỸ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="" role="button" aria-expanded="false"> khách hàng</a>
+                        <ul class="dropdown-menu " id="customer">
+                          <li><a class="dropdown-item" href="./html/customerImg.html">HÌNH ẢNH</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="./html/customerFeel.html">CẢM NHẬN</a></li>
+                         
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">bảng giá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./html/news&event.html" tabindex="-1" aria-disabled="true">tin tức và sự kiện</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./html/contact.html" tabindex="-1" aria-disabled="true">liên hệ</a>
+                      </li>
+                  </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+           
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./img/baner/1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/baner/2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/baner/3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class=" carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class=" carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <main class="main">
+        <section class="main__first">
+            <div class="container">
+                <div class="row mt-4">
+                        <div class="col main__first--img">
+                            <img class="hover-img" src="https://s3-alpha-sig.figma.com/img/3fe5/8cc3/743966f8d037e24c9a4b5d90c1f342f7?Expires=1638144000&Signature=YA-lO-TkgXxVLbpUtmDnKq25DN9tn8loTOyb-eG9Sfi1~uUPF3SnopL28syRrKU9hRRaT-XARbQFgt3YT7GKMuMyJ4sF~ifRCmNVcXWmxodpM2rOrTgAk2-yCIz3ZCKZhyfux5JxrA7yOCRN0F1vvZ1VxXzoFvvWhpElWiy0NWuqRIpMMymrOeevGoGO56FvqgSwFa9m8oIZJ165vawMcid0mhXx1WJxQSjqhJG~B4OvBvJye7~de3-F~PGMEbma6Zth4yyY-tLm-p7PfyLlYZfibPRcqUoTbxbzcfEaWMgPSD-ATVcRsynX9QLSAX7fO7OuX03lRWrhUTPoAtMICQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                        </div>
+                        <div class="col main__first--des">
+                            <h2 class="title">VỀ CHÚNG TÔI</h2>
+                            <p>Từ năm 2017, chúng tôi đã cung cấp cho bệnh nhân các phương pháp điều trị chăm sóc răng miệng tốt nhất & Đội ngũ chuyên gia nha sĩ có tay nghề cao & Trang thiết bị máy móc hiện đại.</p>
+                            <ul>
+                                <li>
+                                    <i class="hover-yelow fas fa-angle-right"></i>
+                                    <span>Bác sĩ có tay nghề cao và giàu kinh nghiệm</span>
+                                </li>
+                                <li>
+                                    <i class="hover-yelow fas fa-angle-right"></i>
+                                    <span>99,99% Khách hàng tin tưởng chọn Nha Khoa Mỹ Phước</span>
+                                </li>
+                                <li>
+                                    <i class="hover-yelow fas fa-angle-right"></i>
+                                    <span>Trang thiết bị máy móc hiện đại</span>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-primary">xem them</button>
+                        </div>
+                    </div>
+        
+            </div>
+        </section>
+        <div class="container">
+            <hr>
+        </div>
+        <section class="main__second">
+            <div class="container">
+                <div class=" text-center main__second--title">
+                    <h2 class="title col-sm-12">
+                        DỊCH VỤ NỔI BẬT TẠI NHA KHOA MỸ PHƯỚC
+                    </h2>
+                    <p class="col-sm-8 align-self-center">
+                        Nha khoa Mỹ Phước cung cấp tất cả các dịch vụ hỗ trợ và điều trị nha khoa, thẩm mỹ nha khoa,
+                        mang đến tất cả các giải pháp làm đẹp nụ cười cho khách hàng.
+                    </p>
+                </div>
+                <div class="main__second--list">
+                    <div class=" item">
+                        <div class="img">
+                           <a href="./html/seviceCeramicTooth.html">
+                            <img src="./img/listSevice/1.png" alt="">
+                           </a>
+                        </div>
+                        <div class="description">
+                            <h3>BỌC RĂNG SỨ</h3>
+                            <p>Bọc răng sứ ivy - không còn sỉn màu, thưa, hô, khập khểnh mòn men răng,răng đều trắng sáng</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="./img/listSevice/2.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h3>DÁN SỨ VENEER</h3>
+                            <p>Dán sứ veneer hạn chế tối đa mài răng, răng xinh đều đẹp, không gây e buốt, kết quả bền đẹp trắng sáng</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="./img/listSevice/3.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h3>TẨY TRẮNG RĂNG</h3>
+                            <p>Bọc răng sứ ivy - không còn sỉn màu, thưa, hô, khập khểnh mòn men răng,răng đều trắng sáng</p>
+                        </div>
+                    </div>
+                    <div class=" item">
+                        <div class="img">
+                            <img src="./img/listSevice/4.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h3>BỌC RĂNG SỨ</h3>
+                            <p>Bọc răng sứ ivy - không còn sỉn màu, thưa, hô, khập khểnh mòn men răng,răng đều trắng sáng</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="./img/listSevice/5.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h3>DÁN SỨ VENEER</h3>
+                            <p>Dán sứ veneer hạn chế tối đa mài răng, răng xinh đều đẹp, không gây e buốt, kết quả bền đẹp trắng sáng</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="./img/listSevice/6.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h3>TẨY TRẮNG RĂNG</h3>
+                            <p>Bọc răng sứ ivy - không còn sỉn màu, thưa, hô, khập khểnh mòn men răng,răng đều trắng sáng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__thirth">
+            <article class="main__thirth--bg">
+                <img src="./img/main/main__thirth.jpg" alt="">
+            </article>
+            <article class="row container main__thirth--des">
+                   
+                   <div class="col-sm-12 ">
+                        <img src="https://s3-alpha-sig.figma.com/img/e3c0/f276/69c2bcb37783e83652b475500f468bd3?Expires=1638144000&Signature=LHfzNdqvyMQp-78nFiYRcNsbePCe3jJEVnKwSabWQDNw83HhUscQamaAWOsRL3BGxCvQxh~KIdg~xl7MXiQj5FGk9EFH26b685OCi12wBRqvMd1W9xefK2dnmO0YKbpwEHZeONR5eJCh2VpBZtXWSUrHeHWF07VAMPIayxLzNdDj9Mw8KUwQ5qrinCFg4zHdhYummSQEBEsaDgo0~5qunYjcT5RPQkLdbXIoJZDEjhilYMF2xoW2GdMWL0kUMEZFua6YmkLDp7Fagjha8g3dl5CUEqXNnzE4a7pGQf69oMIRumGW7WfNx5CKct071~OHDj9ygFOksmtH96sF2UFh~g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                        <h2 class="title">TẠI SAO CHỌN NHA KHOA MỸ PHƯỚC</h2>
+                   </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <strong>HỖ TRỢ KHÁCH HÀNG 24/7</strong>
+                                <p>Đến với nha khoa Mỹ Phước bạn sẽ được hỗ trợ 24/7h</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <strong>GIÁ CẢ HỢP LÝ</strong>
+                                <p>Nha khoa Mỹ Phước luôn hướng khách hàng làm chủ tài khoản trong quá trình điệu trị</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <strong>BÁC SĨ GIÀU KINH NGHIỆM</strong>
+                                <p>Đội ngũ y bác sĩ giàu kinh nghiệm và chuyên môn giỏi</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <strong>TRANG THIẾT BỊ HIỆN ĐẠI</strong>
+                                <p>Nha khoa Mỹ Phước đầu tư trang thiết bị mới để phục vụ công tác điều trị.</p>
+                            </div>
+                        </div>
+                    </div>
+               
+                </article>
+
+        </section>
+        <section class="main__fourth">
+            <div class="container">
+                <atricle class="main__fourth--title ">
+                    <div class="row text-center">
+                        <h2 class="title">
+                            HÌNH ẢNH THÀNH CÔNG CỦA KHÁCH HÀNG
+                        </h2>
+                    </div>
+                    <div class="row text-center justify-content-center mt-2 mb-2">
+                        <div class="col-sm-6 md-3">
+                            <p>Nha khoa Mỹ Phước đã thực hiện thành công các ca phẫu thuật khó
+                                & đem lại nụ cười rạng ngời cho khách hàng</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img class="hover-img" src="./img/imgCustomer/1.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <img class="hover-img" src="./img/imgCustomer/2.jpg" alt="">
+                        </div>
+                    </div>
+                </atricle>
+               <article class="row justify-content-center">
+                    <div class="col-2">
+                        <button type="button" class=" text-center mt-4 justify-content-center btn btn-warning">xem thêm</button>
+                    </div>
+               </article>
+            </div>
+        </section>
+        <section class="main__fiveth">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <label id="button1" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></label>
+                    <label id="buton2" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></label>
+                    <label id="button3" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></label>
+                  </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-caption d-none d-md-block">
+                         <h2 class="title">CẢM NHẬN KHÁCH HÀNG</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-8">
+                                <p>“Bọc răng sứ chính là cơ duyên và là sự lựa chọn sáng suốt của tôi” Mình cũng khá đắn đo vì nhiều người cho rằng bọc răng sứ đau lắm. Nhưng sau khi bọc răng sứ, mình lại không thấy như vậy. </p>
+                            </div>
+                        </div>
+                        <img src="./img/feelCustomerAvata/1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-8">
+                               <p>“Bọc răng sứ chính là cơ duyên và là sự lựa chọn sáng suốt của tôi” Mình cũng khá đắn đo vì nhiều người cho rằng bọc răng sứ đau lắm. Nhưng sau khi bọc răng sứ, mình lại không thấy như vậy. </p>  
+                            </div>
+                        </div>
+                      <img src="./img/feelCustomerAvata/2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-8">
+                               <p>“Bọc răng sứ chính là cơ duyên và là sự lựa chọn sáng suốt của tôi” Mình cũng khá đắn đo vì nhiều người cho rằng bọc răng sứ đau lắm. Nhưng sau khi bọc răng sứ, mình lại không thấy như vậy. </p>
+                            </div>
+                        </div>
+                      <img src="./img/feelCustomerAvata/3.jpg" class="pescial" alt="">
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+        </section>
+        <section class="main__sixth pb-1">
+            <div class="container">
+                <div class="row main__sixth--title justify-content-center mt-4 mb-4">
+                    <h2 class="title col-6 text-center ">TIN TỨC NHA KHOA</h2>
+                </div>
+                <div class="row main__sixth--list">
+                    <div class=" col item">
+                        <div class="img">
+                            <img class="hover-img" src="./img/news/1.png" alt="">
+                        </div>
+                        <div class="description mt-4 mb-2">
+                            <a class="cl-black" href="#">Dở khóc dở cười câu chuyện răng khôn.</a>
+                            <p>Phàm là những bộ phận trên cơ thể con người thì đều có chức năng nhất định...</p>
+                            <div class="row statistical">
+                                <div class="col-4 cl-red">6 12, 2019</div>
+                                <div class="col-5">(22) COMMENTS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col item">
+                        <div class="img">
+                            <img class="hover-img" src="./img/news/2.png" alt="">
+                        </div>
+                        <div class="description mt-4 mb-2">
+                            <a class="cl-black" href="#">Dở khóc dở cười câu chuyện răng khôn.</a>
+                            <p>Phàm là những bộ phận trên cơ thể con người thì đều có chức năng nhất định...</p>
+                            <div class="row statistical">
+                                <div class="col-4 cl-red">6 12, 2019</div>
+                                <div class="col-5">(22) COMMENTS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col item">
+                        <div class="img">
+                            <img class="hover-img" src="./img/news/3.png" alt="">
+                        </div>
+                        <div class="description mt-4 mb-2">
+                            <a class="cl-black" href="#">Dở khóc dở cười câu chuyện răng khôn.</a>
+                            <p>Phàm là những bộ phận trên cơ thể con người thì đều có chức năng nhất định...</p>
+                            <div class="row statistical">
+                                <div class="col-4 cl-red">6 12, 2019</div>
+                                <div class="col-5">(22) COMMENTS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main__sixth--book mt-5 mb-5">
+                    <div class="col text">
+                        <h2 class="title">ĐỂ ĐẠT ĐƯỢC NỤ CƯỜI NHƯ MONG MUỐN!</h2>
+                        <p>HÃY ĐỒNG HÀNH CÙNG CHÚNG TÔI ĐỂ NỤ CƯỜI CỦA BẠN THÊM RẠNG NGỜI</p>
+                    </div>
+                    <div class="col book text-center">
+                        <button  type="button" class="btn btn-warning">đặt lịch hẹn</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer pb-4 overflow-hidden">
+        <div class="container">
+            <div class="row ">
+                <article class="col-4 footer__book pt-4 pb-4">
+                    <img src="https://s3-alpha-sig.figma.com/img/5708/6c28/aacc1b95e793149952caeaf37ae30e82?Expires=1638144000&Signature=RT4W2VpEyOQTYONlqO5MC9Fy-YeLcDpOcCkCxTy~4uX4eV6TwySjkp64dXX6VjsJB1bdtl0bOnGbFjk8yNVxbIlCbpvIKZZtJEzdBwjqwRAmor71oqQqRRXttkRkSzkhZ5ccbu6ao4m6bRYwpb9LY5THaM-crT5J8sY1NTF-K52ocXEvoKLyTtEogjv9KjgbY5Q2Q1Dhcog3li93~fEreLma-kUH95YFnxnhw9wu3jm6yRnCUUiUCxbi3kaTDpOMF0L-yJssYT~nwGMJ-QvFvy0Zj4VPh42UHMpzJZGsdhBa5BeOu4CQ~fS~W-3BYMLdqfn9fIzdeIjBCOMuQwHB5Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                    <p class="mt-3 mb-3">Đăng ký để nhận những thông tin và được tư vấn tốt nhất.</p>
+                    <button  type="button" class="text-uppercase text-white btn btn-warning">đăng kí tại đây</button>
+                </article>
+                <article class="col-2 footer__info mt-4">
+                    <h3 class="mb-3 text-white text-uppercase">thông tin</h3>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="">dịch vụ</a>
+                        </li>
+                        <li><a href="">khách hàng</a></li>
+                        <li><a href="">tin tức và sự kiện</a></li>
+                        <li><a href="">liên hệ</a></li>
+                    </ul>
+                </article>
+                <article class="main__time col-2 mt-4">
+                    <h3 class="mb-3 text-white text-uppercase">thời gian</h3>
+                    <hr>
+                    <div class="time">
+                        <p>
+                            THỨ 2-THỨ 7 8.00 am - 5.00 pm 
+                        </p>
+                        <p>CHỦ NHẬT 10.00 am - 5.00 pm</p>
+                    </div>
+                </article>
+                <article class="main__contact col-4 mt-4">
+                    <h3 class="mb-3 text-white text-uppercase">thông tin liên hệ</h3>
+                    <hr>
+                    <ul>
+                        <li>
+                            <i class="cl-yellow fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+                            <span>TC3, KCN MP2, Bến Cát, Bình Dương</span>
+                        </li>
+                        <li>
+                            <i class="cl-yellow fas fa-phone me-2" aria-hidden="true"></i>
+                            <span>0274.3535.777</span>
+                        </li>
+                        <li>
+                            <i class="cl-yellow fas fa-envelope-open me-2" aria-hidden="true"></i>
+                            <span>info@nhakhoamyphuoc.vn</span>
+                        </li>
+                    </ul>
+                    <div class="row ">
+                        <div class="col-1 me-2 mx-3">
+                            <i class="fab fa-facebook fs-2 text-white" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-1 me-2">
+                            <i class="fab  fa-google-plus fs-2 text-white" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-1 me-2">
+                            <i class="fab fa-twitter fs-2 text-white" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-1 me-2">
+                            <i class="fab fa-pinterest fs-2 text-white" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-1">
+                            <i class="fab fa-linkedin-in fs-2 text-white "></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </footer>
+    <hr class="w-100">
+    <div class="end row justify-content-center align-content-center ">
+        <p class="text-center col-6 mb-0 text-white">NHA KHOA MỸ PHƯỚC © 2020 All Rights Reserved.</p>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

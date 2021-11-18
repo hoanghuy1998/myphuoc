@@ -1,0 +1,335 @@
+* {
+  padding: 0px;
+  margin: 0px; }
+
+html {
+  box-sizing: border-box;
+  cursor: default;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  color: white; }
+
+body {
+  min-height: 100vh;
+  background-color: #E5E5E5; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+button {
+  border: none; }
+
+img {
+  display: block;
+  width: 100%;
+  transition: all .3s; }
+
+hr {
+  margin: 0px;
+  color: white; }
+
+input {
+  outline: none; }
+
+.directionalSlider {
+  color: white !important; }
+
+.cl-red {
+  color: red; }
+
+.cl-blueDark {
+  background-color: #056CB6; }
+
+.cl-black {
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  transition: all .3s; }
+  .cl-black:hover {
+    color: #F2C94C; }
+
+.h-32 {
+  line-height: 2rem !important; }
+
+.active-text {
+  color: #2F80ED !important; }
+
+.active-btn {
+  background-color: #2F80ED !important; }
+  .active-btn:hover {
+    background-color: #056CB6; }
+
+.btn.btn-dark {
+  transition: all .3s; }
+  .btn.btn-dark:hover {
+    background-color: #2F80ED; }
+
+.i-angle-right {
+  background-color: #F25252;
+  width: 1rem;
+  height: 1rem;
+  color: white;
+  border-radius: .4rem;
+  text-align: center;
+  margin-right: 1rem; }
+
+.bg-new {
+  background-color: #F8FAF5; }
+
+.a {
+  transition: all 0.3s; }
+  .a:hover {
+    color: #2F80ED !important; }
+
+.title {
+  color: #2F80ED;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem; }
+
+.hover-yelow {
+  transition: all .3s; }
+  .hover-yelow:hover {
+    background-color: #F2C94C; }
+
+.cl-yellow {
+  color: #F2C94C !important; }
+
+#customer {
+  top: 0 !important; }
+
+.hover-img {
+  transition: all .3s; }
+  .hover-img:hover {
+    transform: translateY(-0.5rem); }
+
+.hover-a {
+  transition: all .3s; }
+  .hover-a:hover {
+    text-decoration: underline; }
+
+.hover-scale {
+  transition: all .3s;
+  cursor: zoom-out; }
+  .hover-scale:hover {
+    transform: scale(1.1); }
+
+.header {
+  height: 50px;
+  background-color: #056CB6; }
+  .header i, .header span {
+    color: white;
+    margin-left: .25rem; }
+
+.nav {
+  min-height: 113px;
+  background-color: white; }
+  .nav__logo {
+    display: grid;
+    align-self: center; }
+  .nav__list a {
+    color: black;
+    text-transform: uppercase;
+    transition: all .3s; }
+  .nav__list .sevice:hover .dropdown-men {
+    display: block !important; }
+  .nav__list .nav-item {
+    position: relative; }
+    .nav__list .nav-item .dropdown-menu {
+      position: absolute;
+      background-color: #2F80ED;
+      padding: 0px; }
+      .nav__list .nav-item .dropdown-menu hr {
+        height: 2px; }
+      .nav__list .nav-item .dropdown-menu li {
+        height: 4rem;
+        display: grid; }
+        .nav__list .nav-item .dropdown-menu li:hover {
+          background-color: #F2C94C; }
+          .nav__list .nav-item .dropdown-menu li:hover a {
+            background-color: #F2C94C;
+            color: white !important; }
+        .nav__list .nav-item .dropdown-menu li a {
+          transition: all .1s;
+          align-self: center;
+          color: white !important;
+          text-transform: uppercase; }
+    .nav__list .nav-item:hover .nav-link {
+      color: #2F80ED !important; }
+
+.baner-aboutUs__introduce {
+  background-image: url(https://s3-alpha-sig.figma.com/img/fcee/8dc1/d7e48a46c2af8aacdb37332bef6a3f3d?Expires=1638144000&Signature=TosHh9cBITk0RdFQ9ZzktRVG2c7w90PV3wLjO4j1WeGW1WoBQutvaptLlGPfnafuZO5nInik9E6HfBDZH9~WR1RxdE6chmgFbE7nQScK98o-T7RZAWbMJ-VDbrbQj0I6lohmzcrr09RyYv~KPMF7E6KOj359L4DWA6iXKsXJE-8wZVcwpimSxVbrN60VYNo~LKAiqo26RaRn~Q0KqZ-vAfWBTgauphIp3G0Rxt~JOTUz6WVHDxZhJeB~IsY~Ojff-oyFfF94P0J9n9F8hnU9ZgJCI0hkdit3jQZ3QX725JXQtgA2Nr3bcRl5sOR8rG2Jx04wK5PhxfOzfVzCHnWtzg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+  background-size: contain; }
+
+.main__first {
+  padding: 2rem 0; }
+  .main__first--des {
+    padding: 1rem .5rem; }
+    .main__first--des ul li i {
+      background-color: #F25252;
+      width: 1rem;
+      height: 1rem;
+      color: white;
+      border-radius: .4rem;
+      text-align: center;
+      margin-right: 1rem; }
+    .main__first--des button {
+      margin: 2rem 0 2rem 4.5rem; }
+.main hr {
+  height: .5rem;
+  border-radius: .25rem;
+  color: #C4C4C4; }
+.main__second {
+  padding: 2rem 0; }
+  .main__second--title p {
+    margin: auto;
+    text-align: center; }
+  .main__second--list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem; }
+    .main__second--list .item {
+      background-color: #F8FAF5;
+      padding: 2rem; }
+      .main__second--list .item .img img {
+        transition: all .3s; }
+        .main__second--list .item .img img:hover {
+          transform: translateY(-0.5rem); }
+      .main__second--list .item .description {
+        margin-top: 2rem;
+        text-align: center; }
+        .main__second--list .item .description h3 {
+          color: black;
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 400; }
+          .main__second--list .item .description h3:hover {
+            color: #F2C94C; }
+        .main__second--list .item .description p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          display: -webkit-box; }
+.main__thirth {
+  position: relative;
+  height: 480px; }
+  .main__thirth--bg {
+    height: 100%; }
+    .main__thirth--bg img {
+      height: 100%; }
+  .main__thirth--des {
+    position: absolute;
+    top: 0;
+    bottom: 0%;
+    margin: 0 auto;
+    padding-top: 4rem;
+    left: 0px;
+    right: 0px; }
+    .main__thirth--des img {
+      width: 2rem;
+      height: 2rem;
+      display: inline; }
+    .main__thirth--des h2 {
+      display: inline;
+      margin-top: 2rem; }
+    .main__thirth--des strong {
+      color: #2F80ED;
+      margin-bottom: 1rem !important; }
+.main__fourth {
+  padding: 4rem 0; }
+  .main__fourth button {
+    text-transform: uppercase;
+    color: white;
+    background-color: #F2C94C;
+    transition: all .2s; }
+.main__fiveth {
+  padding-bottom: 2rem; }
+  .main__fiveth .carousel-item {
+    background-color: white;
+    min-height: 319px; }
+    .main__fiveth .carousel-item p {
+      color: black; }
+    .main__fiveth .carousel-item img {
+      width: 4rem;
+      height: 4rem;
+      text-align: center;
+      margin: auto; }
+    .main__fiveth .carousel-item .pescial {
+      border-radius: 4rem; }
+  .main__fiveth .carousel-indicators .active {
+    background-color: black !important; }
+  .main__fiveth .carousel-indicators label {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: #eee;
+    margin-left: .5rem;
+    border: solid #eee .5px; }
+.main__sixth p {
+  font-size: 14px; }
+.main__sixth .book button {
+  background-color: #F2C94C;
+  color: white;
+  text-transform: uppercase;
+  transition: all .3s; }
+  .main__sixth .book button:hover {
+    background-color: #ecb81a; }
+.main-aboutUs__four--list img {
+  border-radius: 8rem;
+  transition: all .3s; }
+  .main-aboutUs__four--list img:hover {
+    transform: translateY(-0.5rem); }
+.main-seviceCeramicTooth .mainPhoto {
+  height: 380px; }
+.main-seviceCeramicTooth .seviceTitle {
+  height: 4rem; }
+.main-customerFeel img {
+  border-radius: 4rem;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  display: block;
+  margin: 1rem auto; }
+.main-customerFeel p {
+  text-align: center; }
+.main-customerFeel strong {
+  text-align: center;
+  margin: auto;
+  display: block; }
+
+.footer {
+  background-color: #2F80ED; }
+  .footer__book img {
+    height: 43px;
+    width: 181px; }
+  .footer hr {
+    background-color: #F2C94C;
+    height: .25rem;
+    width: 10rem;
+    margin-bottom: 1rem; }
+  .footer a, .footer p, .footer span, .footer i {
+    color: white; }
+  .footer li a {
+    text-transform: uppercase; }
+  .footer i {
+    transition: all .2s; }
+    .footer i:hover {
+      transform: translateY(-0.5rem); }
+
+hr {
+  min-height: .5rem;
+  background-color: white; }
+
+.end {
+  background-color: #F2C94C;
+  min-height: 4rem; }
+  .end p {
+    line-height: 4rem; }
+
+/*# sourceMappingURL=style.css.map */
